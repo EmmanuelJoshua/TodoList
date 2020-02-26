@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="todo">To-do</string>
+    <string name="list">List</string>
+    <string name="signup">Sign Up</string>
+    <string name="gogle">Continue with Google</string>
+    <string name="reminders">Reminders made simple</string>
+    <string name="remindText">Always keep Track of your daily tasks. Store your todo list and always be reminded.
+    </string>
+    <string name="home">Home</string>
+    <string name="tasks">Task</string>
+    <string name="today">Today</string>
+    <string name="user">Hello, Emmanuel!</string>
+    <string name="todayTask">Today you have 0 Tasks.</string>
+    <string name="todayRemind">Today Reminder</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="task_fragment">Task Fragment</string>
+    <string name="image_desc">Images</string>
+    <string name="addtask">Add new task</string>
+    <string name="addtask2">Add task</string>
+    <string name="taskName">Task name</string>
+    <string name="taskDate">Choose Date</string>
+    <string name="personal">Personal</string>
+    <string name="work">Work</string>
+    <string name="study">Study</string>
+    <string name="meeting">Meeting</string>
+    <string name="emptytask">You have no tasks to do</string>
+    <string name="notask">No tasks</string>
+    <string name="category">Category</string>
+
+    <string name="date">07:00 AM</string>
+    <string name="task_details">House Chores</string>
+    <string name="reminder_notification_title_template">Reminder: You Have One Task</string>
+
+    <!-- TODO: remove this placeholder text -->
+    <string name="reminder_notification_placeholder_text_template">Wash Dishes - 12/10/2019</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_reply">Reply</string>
+    <string name="tomorrow">Tomorrow</string>
+</resources>

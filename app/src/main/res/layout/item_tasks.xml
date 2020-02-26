@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="0dp"
+                android:background="@drawable/tasks_design">
+
+    <View
+            android:background="@drawable/leftbg_meeting"
+            android:layout_width="4dp"
+            android:layout_marginStart="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:id="@+id/left_view"/>
+    <TextView
+            android:text="@string/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/time_date" android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" android:layout_marginStart="40dp" android:textColor="#C7CACF"
+            android:textSize="15sp" android:fontFamily="@font/rubik"/>
+    <TextView
+            android:text="@string/task_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_details" android:layout_centerVertical="true"
+            android:textColor="#565578" android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/rubik2" android:layout_toEndOf="@+id/time_date"
+    />
+    <ImageView
+            android:contentDescription="@string/image_desc"
+            android:layout_width="19dp"
+            android:layout_height="19dp" app:srcCompat="@drawable/circle"
+            android:layout_alignParentStart="true" android:layout_marginStart="14dp"
+            android:id="@+id/taskStatus" android:layout_centerVertical="true"/>
+    <ImageView
+            android:contentDescription="@string/image_desc"
+            android:layout_width="18dp"
+            android:layout_height="18dp" app:srcCompat="@drawable/bell_small"
+            android:layout_alignParentEnd="true" android:id="@+id/imageView5" android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"/>
+
+</RelativeLayout>

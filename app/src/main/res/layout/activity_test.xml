@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".test">
+    <RelativeLayout
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/label_view"
+            android:layout_width="195dp"
+            android:layout_height="204dp"
+            app:layout_constraintVertical_bias="0.253" app:layout_constraintHorizontal_bias="0.503">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp" android:gravity="center">
+            <TextView
+                    android:textAllCaps="true"
+                    android:text="@string/todo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:fontFamily="@font/dosis_semibold"
+                    android:textSize="28sp"
+                    android:textColor="#565578"/>
+            <TextView
+                    android:textSize="28sp"
+                    android:textAllCaps="true"
+                    android:text="@string/list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:fontFamily="@font/dosis_light"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#565578"/>
+
+        </LinearLayout>
+        <ImageView
+                android:contentDescription="@string/app_name"
+                android:layout_width="140dp"
+                android:layout_height="165dp" app:srcCompat="@drawable/clipboard"
+                android:id="@+id/imageView" android:scaleType="fitCenter" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <Button
+            android:drawableStart="@mipmap/google1"
+            android:background="@drawable/google_button"
+            android:textAllCaps="false"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_view" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintVertical_bias="0.604" android:text="@string/gogle"
+            android:fontFamily="@font/pt_sans" android:textSize="19sp" android:textColor="#E8E8EA"
+            android:paddingStart="15dp" android:drawablePadding="-15dp" app:layout_constraintHorizontal_bias="0.505"
+            android:onClick="continueWithGoogle"/>
+    <TextView
+            android:text="@string/reminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_view" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:fontFamily="@font/exo_regular" android:textSize="19sp"
+            android:textColor="#565578" android:textStyle="bold" app:layout_constraintVertical_bias="0.02"/>
+    <TextView
+            android:text="@string/remindText"
+            android:layout_width="255dp"
+            android:layout_height="73dp"
+            android:id="@+id/textView4" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/label_view" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.595" app:layout_constraintVertical_bias="0.816"
+            android:textAlignment="center" android:fontFamily="@font/exo_light" android:textSize="17sp"/>
+</android.support.constraint.ConstraintLayout>

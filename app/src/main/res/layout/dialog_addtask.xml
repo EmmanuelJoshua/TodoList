@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:layout_gravity="center|center_vertical">
+
+    <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="270dp">
+
+        <TextView
+                android:layout_marginTop="30dp"
+                android:text="@string/addtask"
+                android:fontFamily="@font/rubik" android:textSize="17sp"
+                android:textColor="#565578" android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tomorrowText"/>
+        <EditText
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/taskName"
+                android:id="@+id/editText2"
+                android:background="@android:color/transparent"
+                android:inputType="text|textCapSentences"
+                android:textColor="#565578"
+                android:fontFamily="@font/rubik"
+                android:textSize="20sp"/>
+
+        <View
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D4D4"/>
+
+        <HorizontalScrollView
+                android:background="@android:color/transparent"
+                android:scrollbarSize="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                <Button
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/personal_icon"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:text="@string/personal"
+                        android:fontFamily="@font/rubik" android:textSize="16sp"
+                        android:textColor="#565578"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_personal"
+                        android:drawablePadding="-3dp"
+                        android:paddingStart="1dp"/>
+
+                <Button
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/work_icon"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:text="@string/work"
+                        android:fontFamily="@font/rubik" android:textSize="16sp"
+                        android:textColor="#565578"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_work"
+                        android:drawablePadding="-18dp"
+                        android:paddingStart="13dp"/>
+
+
+                <Button
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/meeting_icon"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:text="@string/meeting"
+                        android:fontFamily="@font/rubik" android:textSize="16sp"
+                        android:textColor="#565578"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_meeting" android:drawablePadding="-5dp"
+                        android:paddingStart="4dp"/>
+
+                <Button
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:drawableStart="@drawable/study_icon"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center"
+                        android:text="@string/study"
+                        android:fontFamily="@font/rubik" android:textSize="16sp"
+                        android:textColor="#565578"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_study" android:drawablePadding="-15dp" android:paddingStart="9dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <View
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D4D4D4"/>
+
+        <EditText
+                android:background="@android:color/transparent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="@string/taskDate"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:fontFamily="@font/rubik"
+                android:textSize="18sp"/>
+        <Button
+                android:textAllCaps="false"
+                android:id="@+id/addtask2"
+                android:text="@string/addtask2"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/addtask_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_sans"
+                android:textSize="19sp"
+                android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+            app:cardElevation="15dp"
+            app:cardBackgroundColor="#EC36AF"
+            app:cardCornerRadius="28dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            app:contentPadding="17dp"
+            android:id="@+id/cancleAdd"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fab_delete" android:contentDescription="@string/image_desc"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
